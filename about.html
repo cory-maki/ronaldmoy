@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Ronald Moy | Real Estate Investor &amp; Entrepreneur | Los Angeles</title>
+<meta name="description" content="Learn about Ronald Moy, a retired real estate entrepreneur and investor based in Los Angeles, California. Decades of strategic property investment and cycle-tested deal-making in the Southern California market."/>
+<link rel="canonical" href="https://ronaldmoy.netlify.app/about.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ronaldmoy.netlify.app/#person",
+      "name": "Ronald Moy",
+      "jobTitle": "Real Estate Investor &amp; Entrepreneur",
+      "url": "https://ronaldmoy.netlify.app/",
+      "image": "https://ronaldmoy.netlify.app/images/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "description": "Ronald Moy is a retired real estate entrepreneur based in Los Angeles whose career was defined by disciplined investment decision-making, long-term asset building, and the ability to navigate multiple real estate cycles over several decades.",
+      "sameAs": [
+        "https://www.quora.com/profile/Ronald-Moy-2",
+        "https://www.reddit.com/user/RonaldMoy/",
+        "https://github.com/RonaldMoy",
+        "https://www.crunchbase.com/home",
+        "https://dribbble.com/ronaldmoy",
+        "https://gravatar.com/ronaldmoy1",
+        "https://vimeo.com/ronaldmoy",
+        "https://www.producthunt.com/@ronaldmoy",
+        "https://www.angellist.com",
+        "https://www.f6s.com/ronald-moy1",
+        "https://substack.com/@ronaldmoy1",
+        "https://scholar.google.com/citations?user=7CBOC00AAAAJ",
+        "https://patch.com/users/ronald-moy",
+        "https://medium.com/@ronaldmoy015",
+        "https://www.slideshare.net/ronaldmoy2",
+        "https://ronaldmoy.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ronaldmoy.netlify.app/#website",
+      "url": "https://ronaldmoy.netlify.app/",
+      "name": "Ronald Moy",
+      "publisher": {"@id": "https://ronaldmoy.netlify.app/#person"}
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://ronaldmoy.netlify.app/about.html",
+      "url": "https://ronaldmoy.netlify.app/about.html",
+      "name": "About Ronald Moy",
+      "mainEntity": {"@id": "https://ronaldmoy.netlify.app/#person"}
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co/','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Ronald Moy';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Ronald<span> Moy</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>Ronald Moy</h1>
+  <p class="pg-sub">Retired real estate entrepreneur and investor based in Los Angeles, California, with a career spanning multiple market cycles and decades of strategic property investment.</p>
+</div>
+
+<!-- ══ PROFILE CARD ══════════════════════════════════════════════ -->
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="Ronald Moy"/></div>
+    <div>
+      <div class="pc-nm">Ronald Moy</div>
+      <div class="pc-rl">Real Estate Investor &amp; Entrepreneur</div>
+      <div class="pc-lc">Los Angeles, California</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT SECTIONS + SIDEBAR ══════════════════════════════════ -->
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+
+      <div class="csec">
+        <p class="cey">Career Foundation</p>
+        <h2>Strategic Investment in the Los Angeles Market</h2>
+        <p>Ronald Moy's career in real estate was built through deliberate, long-term investment activity in the Los Angeles market. Rather than pursuing short-cycle trades or speculative positioning, Moy focused on acquiring properties with durable fundamentals — assets underpinned by the supply constraints and structural demand that define Southern California real estate.</p>
+        <p>His approach to deal-making was shaped by the discipline of patient capital deployment. Where others chased momentum, Moy prioritized quality over volume, building a portfolio that could withstand the disruptions that periodically move through even the most resilient markets. This orientation — grounded in fundamentals rather than sentiment — became the defining characteristic of his investment career.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Market Experience</p>
+        <h2>Navigating Multiple Real Estate Cycles</h2>
+        <p>A career spanning several decades in the Los Angeles market means Ronald Moy has operated across the full range of real estate conditions — the expansion phases that reward conviction, and the contraction phases that test resolve. Each cycle added to his understanding of how Southern California property markets absorb shocks, reprice risk, and eventually recover.</p>
+        <p>The experience of cycle navigation is not easily replicated. It requires the ability to distinguish between temporary disruption and structural deterioration — a judgment built not from models, but from direct participation across years of shifting market conditions. Moy's career reflects that kind of earned perspective, accumulated deal by deal across the long arc of the Los Angeles real estate market.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Los Angeles Market</p>
+        <h2>Deep Familiarity with Southern California Real Estate</h2>
+        <p>Los Angeles is among the most structurally complex real estate markets in the United States. Constrained supply driven by geography and zoning, sustained population demand, and the compounding effect of decades of limited new construction have combined to create a market where long-term holders are consistently rewarded. Ronald Moy built his career inside this specific environment — not as a generalist, but as a practitioner with deep local knowledge.</p>
+        <p>That depth of market familiarity is most visible in how Moy approached asset selection. Understanding which neighborhoods, property types, and deal structures performed across cycles — and which didn't — required the kind of ground-level knowledge that only comes from sustained participation. His career in Los Angeles real estate reflects that immersion.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Investment Philosophy</p>
+        <h2>Wealth Building Through Discipline and Patience</h2>
+        <p>The wealth-building outcomes of long-term real estate investment are well documented, but the discipline required to achieve them is harder to sustain than it appears. Ronald Moy's career illustrates the compounding effect of consistent commitment to a single asset class — executed with capital discipline, careful deal selection, and the patience to let positions develop over the timeframes that real estate rewards.</p>
+        <p>His philosophy centers on the distinction between activity and value creation. Not every transaction adds to a portfolio's long-term strength, and the ability to be selective — to pass on opportunities that don't meet the standard — is as important as the ability to execute when the right deal appears. That selectivity, sustained across a full career, produced the kind of durable financial outcomes that define successful long-term investment.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Legacy &amp; Mentorship</p>
+        <h2>Knowledge Transfer and the Next Generation of Investors</h2>
+        <p>In the later phase of his career, Ronald Moy has shifted focus toward mentorship and the transfer of hard-earned knowledge to professionals navigating earlier stages of their investment journeys. The perspective of a full-career investor — one who has seen both the upside of sustained commitment and the discipline required to weather downturns — carries a different quality than the perspective of someone earlier in the process.</p>
+        <p>Moy's engagement with the next generation of real estate investors reflects a view that experienced operators have a responsibility to make their knowledge accessible. The principles that shaped his career in Los Angeles real estate — disciplined deal selection, patient capital deployment, cycle-aware risk management — are transferable, and the transmission of those principles is a meaningful contribution to the broader investment community. Learn more about his thinking in the <a href="career-strategic-real-estate-investment.html">articles on this site</a>.</p>
+      </div>
+
+    </div>
+
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Name</span><span class="fv">Ronald Moy</span></div>
+        <div class="fr"><span class="fl">Location</span><span class="fv">Los Angeles, CA</span></div>
+        <div class="fr"><span class="fl">Field</span><span class="fv">Real Estate Investment</span></div>
+        <div class="fr"><span class="fl">Market</span><span class="fv">Southern California</span></div>
+        <div class="fr"><span class="fl">Focus</span><span class="fv">Long-Term Asset Building</span></div>
+        <div class="fr"><span class="fl">Status</span><span class="fv">Retired Entrepreneur</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow Ronald Moy on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">Ronald Moy in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Ronald Moy. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
